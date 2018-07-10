@@ -31,7 +31,10 @@ class ViewController: UIViewController {
     }
     
     
-    @IBOutlet var dimBtnPressed: UIButton!
+    @IBAction func dimBtnPressed(_ sender: Any) {
+        dimBtn.dim()
+    }
+    
     
 }
 

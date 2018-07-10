@@ -19,4 +19,14 @@ extension UIButton{
         wiggleAnim.toValue = CGPoint(x: self.center.x+5.0, y: self.center.y)
         layer.add(wiggleAnim, forKey: "position")
     }
+    
+    func dim(){
+        UIView.animate(withDuration: 0.3, animations: {
+            self.alpha = 0.75
+        }) { (finished) in
+            UIView.animate(withDuration: 0.3, animations: {
+                self.alpha = 1.0
+            })
+        }
+    }
 }
