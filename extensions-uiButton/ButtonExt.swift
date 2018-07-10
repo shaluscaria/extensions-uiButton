@@ -10,6 +10,8 @@ import UIKit
 
 
 extension UIButton{
+    
+    //func provide wiggles to button, implemented using Core Animation
     func wiggle(){
         let wiggleAnim = CABasicAnimation(keyPath: "position")
         wiggleAnim.duration = 0.15
@@ -20,6 +22,7 @@ extension UIButton{
         layer.add(wiggleAnim, forKey: "position")
     }
     
+    //func dims the color of a button
     func dim(){
         UIView.animate(withDuration: 0.3, animations: {
             self.alpha = 0.75
@@ -30,6 +33,7 @@ extension UIButton{
         }
     }
     
+    //func adds random background color to the button
     func colorize(){
         let randomNumber = generateRandomNumber(quantity: 3)
         let randomColor = UIColor(red: randomNumber[0]/255, green:randomNumber[1]/255, blue: randomNumber[2]/255, alpha: 1.0)

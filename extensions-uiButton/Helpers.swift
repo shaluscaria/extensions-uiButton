@@ -8,6 +8,7 @@
 
 import UIKit
 
+//to generate random CGFloat numbers
 func generateRandomNumber(quantity:Int)-> [CGFloat]{
     var randomNumberArray = [CGFloat]()
     for _ in 1...quantity{
