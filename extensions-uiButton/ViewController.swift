@@ -23,6 +23,7 @@ class ViewController: UIViewController {
 
    
     @IBAction func colorizeBtnPressed(_ sender: Any) {
+        colorizeBtn.colorize()
     }
     
     
