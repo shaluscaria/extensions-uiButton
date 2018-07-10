@@ -31,7 +31,7 @@ extension UIButton{
     }
     
     func colorize(){
-        let randomNumber = randomNumberGenerator(quantity: 3)
+        let randomNumber = generateRandomNumber(quantity: 3)
         let randomColor = UIColor(red: randomNumber[0]/255, green:randomNumber[1]/255, blue: randomNumber[2]/255, alpha: 1.0)
         UIView.animate(withDuration: 0.3) {
             self.backgroundColor = randomColor
