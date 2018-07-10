@@ -7,4 +7,4 @@ Extends UIButton to add animations to button.
 2. dim()
      Button color would gets dimmed and reverses.
 3. colorize()
-     Provides a random color to a button 
+     Provides a random color to button.
